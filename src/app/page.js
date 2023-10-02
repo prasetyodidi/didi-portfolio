@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
 import FooterSection from "./components/FooterSection";
+import AboutSection from "./components/AboutSection";
 
 export default function Home() {
   const headerLinkStyle = "hover:underline hover:cursor-pointer underline-offset-2 decoration-orange-500 decoration-2";
@@ -13,6 +14,7 @@ export default function Home() {
         <Link href={"#"} className={headerLinkStyle}>Corporation</Link>
       </header>
       <HeroSection />
+      <AboutSection />
       <ProjectsSection />
       <FooterSection />
     </main>
