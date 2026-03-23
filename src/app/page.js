@@ -11,7 +11,7 @@ import Logo from "/public/didi-logo.png";
 
 export default function Home() {
   const headerLinkStyle = "hover:text-primaryOrange transition-colors decoration-orange-500 decoration-2 underline-offset-4 font-medium text-sm lg:text-base";
-  
+
   return (
     <main className="relative flex min-h-screen flex-col bg-white">
       {/* Sticky Header with Glassmorphism */}
@@ -20,7 +20,7 @@ export default function Home() {
           {Logo && <Image src={Logo} alt="Didi Prasetyo Logo" width={40} height={40} className="rounded-full object-cover" />}
           <span className="font-bold text-xl text-black ml-2">Didi Prasetyo</span>
         </div>
-        
+
         <nav className="hidden md:flex flex-row gap-6 text-slate-800">
           <Link href={"#home"} className={headerLinkStyle}>Home</Link>
           <Link href={"#about"} className={headerLinkStyle}>About Me</Link>
