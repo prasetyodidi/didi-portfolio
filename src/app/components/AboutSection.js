@@ -9,13 +9,13 @@ function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
             <p>
-              Hello there! 👋 I'm <span className="font-semibold text-primaryOrange">Didi Prasetyo</span>, an enthusiastic Web Developer and UI/UX Designer based in Central Java, Indonesia.
+              Hello there! 👋 I&apos;m <span className="font-semibold text-primaryOrange">Didi Prasetyo</span>, an enthusiastic Web Developer and UI/UX Designer based in Central Java, Indonesia.
             </p>
             <p>
               With 5 years of professional experience, I have developed a strong passion for solving complex backend logic while simultaneously crafting intuitive, beautiful user interfaces on the frontend.
             </p>
             <p>
-              As a Computer Science student, I continually explore fascinating new technologies. Whether I'm designing systems in Golang or tracing pixel-perfect layouts in React, I am driven by the desire to build robust, scalable applications that deliver real value.
+              As a Computer Science student, I continually explore fascinating new technologies. Whether I&apos;m designing systems in Golang or tracing pixel-perfect layouts in React, I am driven by the desire to build robust, scalable applications that deliver real value.
             </p>
           </div>
           <div className="relative h-[26rem] w-full rounded-2xl overflow-hidden shadow-2xl group border-4 border-white">

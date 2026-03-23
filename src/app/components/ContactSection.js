@@ -9,9 +9,9 @@ function ContactSection() {
       <div className="max-w-5xl mx-auto w-full relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's work together</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Let&apos;s work together</h2>
             <p className="text-slate-400 text-lg mb-10 max-w-md leading-relaxed">
-              I'm always open to discussing web development work, mobile app projects, or partnership opportunities.
+              I&apos;m always open to discussing web development work, mobile app projects, or partnership opportunities.
             </p>
             
             <div className="space-y-6">

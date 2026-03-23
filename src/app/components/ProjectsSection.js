@@ -31,7 +31,7 @@ function ProjectsSection() {
     <section className="py-24 px-6 md:px-12 bg-slate-50 min-h-screen flex flex-col justify-center">
       <div className="max-w-6xl mx-auto w-full">
         <h2 className="text-3xl font-bold text-black mb-4 text-center">Featured Portfolio</h2>
-        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">A showcase of the complex backend systems, engaging mobile apps, and beautiful web interfaces I've built.</p>
+        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">A showcase of the complex backend systems, engaging mobile apps, and beautiful web interfaces I&apos;ve built.</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {projects.map((project, idx) => (
             <ProjectCard key={idx} {...project} />
