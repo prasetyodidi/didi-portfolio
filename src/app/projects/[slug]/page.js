@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getProjectBySlug, projects } from "../../../data/projects";
 import { notFound } from "next/navigation";
 import FooterSection from "../../components/FooterSection";
+import ProjectLinks from "../../components/ProjectLinks";
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -44,8 +45,22 @@ export default function ProjectDetail({ params }) {
             </p>
           </div>
 
-          <div className="relative w-full h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl mb-16 border-8 border-white bg-slate-100">
-            {project.image && <Image src={project.image} alt={project.label} className="object-cover w-full h-full" priority />}
+          {/* Gallery Section */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-slate-800 mb-6 text-center md:text-left">Project Gallery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+              {/* Primary Image / Thumbnail */}
+              <div className="relative w-full h-[300px] md:h-[450px] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 col-span-1 md:col-span-2">
+                {project.image && <Image src={project.image} alt={`${project.label} Main`} className="object-cover w-full h-full" priority />}
+              </div>
+              
+              {/* Additional Gallery Images */}
+              {project.gallery && project.gallery.length > 0 && project.gallery.map((img, idx) => (
+                <div key={idx} className="relative w-full h-[250px] rounded-3xl overflow-hidden shadow-md border-4 border-white bg-slate-100">
+                  <Image src={img} alt={`${project.label} Gallery Image ${idx + 1}`} className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" />
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="prose prose-lg prose-slate max-w-none text-slate-700">
@@ -55,14 +70,7 @@ export default function ProjectDetail({ params }) {
             </p>
             
             <h2 className="text-2xl font-bold text-slate-800 mb-4">Links & Resources</h2>
-            <div className="flex flex-wrap gap-4">
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-800 transition-colors shadow-lg">
-                View Source on GitHub
-              </a>
-              <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-slate-200 text-slate-700 rounded-xl font-medium hover:border-primaryOrange hover:text-primaryOrange transition-colors">
-                Visit Live Site
-              </a>
-            </div>
+            <ProjectLinks githubLink={project.githubLink} liveLink={project.liveLink} />
           </div>
         </div>
       </article>
