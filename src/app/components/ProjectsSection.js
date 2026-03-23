@@ -1,45 +1,44 @@
-import Image1 from "@public/image1.png";
 import Image from "next/image";
+import Link from "next/link";
+import { projects } from "../../data/projects";
 
-function ProjectCard(project) {
+function ProjectCard({ label, description, image, tags, slug }) {
   return (
-    <div className="group relative">
-      <h1 className="hidden group-hover:inline absolute bottom-4 left-6 text-xl">project {project.label}</h1>
-      <Image src={project.imageUrl} alt={project.label} />
+    <div className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
+      <div className="relative h-56 w-full overflow-hidden bg-slate-100">
+        <Image src={image} alt={label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+      </div>
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="font-bold text-xl mb-3 text-slate-800">{label}</h3>
+        <p className="text-slate-600 text-sm mb-6 leading-relaxed flex-grow">{description}</p>
+        <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+          {tags.map((tag, idx) => (
+            <span key={idx} className="text-xs font-semibold px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <Link href={`/projects/${slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
+          View Details <span className="transition-all opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1">→</span>
+        </Link>
+      </div>
     </div>
   );
 }
 
 function ProjectsSection() {
-  const projects = [
-    {
-      label: "Project A",
-      imageUrl: Image1,
-    },
-    {
-      label: "Project B",
-      imageUrl: Image1,
-    },
-    {
-      label: "Project B",
-      imageUrl: Image1,
-    },
-    {
-      label: "Project B",
-      imageUrl: Image1,
-    },
-    {
-      label: "Project B",
-      imageUrl: Image1,
-    },
-  ];
   return (
-    <div className="text-black px-12">
-      <h1 className="text-3xl font-bold py-4">Latest Projects</h1>
-      <div className="grid grid-cols-3 gap-6">
-        {projects.map((project) => ProjectCard(project))}
+    <section className="py-24 px-6 md:px-12 bg-slate-50 min-h-screen flex flex-col justify-center">
+      <div className="max-w-6xl mx-auto w-full">
+        <h2 className="text-3xl font-bold text-black mb-4 text-center">Featured Portfolio</h2>
+        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">A showcase of the complex backend systems, engaging mobile apps, and beautiful web interfaces I've built.</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+          {projects.map((project, idx) => (
+            <ProjectCard key={idx} {...project} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
