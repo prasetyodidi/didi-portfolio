@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Didi Prasetyo - Portfolio',
   description: 'Professional Portfolio of Didi Prasetyo, an expert Web and Mobile Developer.',
+  icons: {
+    icon: '/didi-logo.png',
+    apple: '/didi-logo.png',
+  },
 }
 
 export default function RootLayout({ children }) {
