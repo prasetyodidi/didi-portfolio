@@ -15,19 +15,19 @@ export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col bg-white">
       {/* Sticky Header with Glassmorphism */}
-      <header className="sticky top-0 z-50 flex flex-row justify-between items-center px-6 md:px-12 py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
-        <div className="flex items-center gap-2">
-          {Logo && <Image src={Logo} alt="Didi Prasetyo Logo" width={40} height={40} className="rounded-full object-cover" />}
-          <span className="font-bold text-xl text-black ml-2">Didi Prasetyo</span>
+      <header className="sticky top-0 z-50 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 py-3 md:py-4 bg-white/80 backdrop-blur-md border-b border-gray-100 gap-3 md:gap-0">
+        <div className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-start">
+          {Logo && <Image src={Logo} alt="Didi Prasetyo Logo" width={36} height={36} className="rounded-full object-cover" />}
+          <span className="font-bold text-lg md:text-xl text-black ml-2">Didi Prasetyo</span>
         </div>
 
-        <nav className="hidden md:flex flex-row gap-6 text-slate-800">
-          <Link href={"#home"} className={headerLinkStyle}>Home</Link>
-          <Link href={"#about"} className={headerLinkStyle}>About Me</Link>
-          <Link href={"#skills"} className={headerLinkStyle}>Skills</Link>
-          <Link href={"#portfolio"} className={headerLinkStyle}>Portfolio</Link>
-          <Link href={"#experience"} className={headerLinkStyle}>Experience</Link>
-          <Link href={"#contact"} className={headerLinkStyle}>Contact</Link>
+        <nav className="flex flex-row overflow-x-auto w-full md:w-auto gap-5 md:gap-6 text-slate-800 pb-1 md:pb-0 hide-scrollbar justify-start md:justify-end px-2 md:px-0">
+          <Link href={"#home"} className={`${headerLinkStyle} whitespace-nowrap`}>Home</Link>
+          <Link href={"#about"} className={`${headerLinkStyle} whitespace-nowrap`}>About</Link>
+          <Link href={"#skills"} className={`${headerLinkStyle} whitespace-nowrap`}>Skills</Link>
+          <Link href={"#portfolio"} className={`${headerLinkStyle} whitespace-nowrap`}>Portfolio</Link>
+          <Link href={"#experience"} className={`${headerLinkStyle} whitespace-nowrap`}>Experience</Link>
+          <Link href={"#contact"} className={`${headerLinkStyle} whitespace-nowrap`}>Contact</Link>
         </nav>
       </header>
 
