@@ -30,8 +30,8 @@ function HeroSection() {
       <div className="absolute top-0 right-0 md:left-0 w-52 h-52 bg-primaryOrange blur-[6rem] md:blur-[8rem] rounded-full opacity-50 md:opacity-100"></div>
 
       {/* Decorative Hero Image */}
-      <div className="absolute right-[-30%] bottom-[30%] md:top-0 md:right-0 h-[60%] md:h-[100%] w-full md:w-[750px] z-0 opacity-15 md:opacity-100 pointer-events-none flex justify-end">
-        <Image priority src={HeroImage} alt="hero image" className="object-contain w-auto h-full" />
+      <div className="absolute right-[-45%] bottom-[-5%] md:top-0 md:right-0 h-[100%] w-[150%] md:w-[750px] z-0 opacity-100 pointer-events-none flex justify-end items-center">
+        <Image priority src={HeroImage} alt="hero image" className="object-contain w-auto h-[120%] md:h-full" />
       </div>
 
       <div className="flex flex-col z-10 animate-fade-in-up mt-[-10vh] md:mt-0 relative">
