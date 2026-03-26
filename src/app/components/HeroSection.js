@@ -35,7 +35,7 @@ function HeroSection() {
       </div>
 
       <div className="flex flex-col z-10 animate-fade-in-up mt-[-10vh] md:mt-0 relative">
-        <h1 className="flex flex-col text-4xl sm:text-5xl md:text-6xl text-black mt-16 md:mt-24 gap-1 md:gap-3">
+        <h1 className="flex flex-col text-4xl sm:text-5xl md:text-6xl text-black mt-20 md:mt-24 gap-1 md:gap-3">
           <span className="font-light">My name is</span>
           <span className="font-semibold">Didi Prasetyo</span>
         </h1>
