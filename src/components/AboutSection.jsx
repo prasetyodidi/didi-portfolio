@@ -20,7 +20,7 @@ function AboutSection() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primaryOrange/20 to-transparent z-10 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none"></div>
             <img 
               priority
-              src="/didi-profesional-foto.png"
+              src="/didi-profesional-foto.webp"
               alt="Didi Prasetyo" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
