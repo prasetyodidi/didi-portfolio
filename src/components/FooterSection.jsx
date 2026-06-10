@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 function FooterSection() {
   return (
@@ -9,13 +8,13 @@ function FooterSection() {
         </p>
         <p className="text-sm text-slate-500">
           Source code available on{" "}
-          <Link
+          <a
             href="https://github.com/prasetyodidi"
             target="_blank"
             className="text-primaryOrange hover:underline underline-offset-2 transition-all"
           >
             GitHub
-          </Link>. All rights reserved.
+          </a>. All rights reserved.
         </p>
       </div>
     </footer>

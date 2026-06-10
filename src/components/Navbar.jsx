@@ -1,9 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from "react";
-import Logo from "/public/didi-logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,19 +24,19 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-50 flex flex-row justify-between items-center px-6 md:px-12 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <Link href="#home" onClick={closeMenu} className="flex items-center gap-2 z-50">
-          {Logo && <Image src={Logo} alt="Didi Prasetyo Logo" width={40} height={40} className="rounded-full object-cover shadow-sm" />}
+        <a href="#home" onClick={closeMenu} className="flex items-center gap-2 z-50">
+          <img src="/didi-logo.png" alt="Didi Prasetyo Logo" width={40} height={40} className="rounded-full object-cover shadow-sm" />
           <span className="font-bold text-xl text-black ml-2">Didi Prasetyo</span>
-        </Link>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-row gap-6 lg:gap-8 text-slate-800 items-center">
-          <Link href={"#home"} className={desktopLinkStyle}>Home</Link>
-          <Link href={"#about"} className={desktopLinkStyle}>About</Link>
-          <Link href={"#skills"} className={desktopLinkStyle}>Skills</Link>
-          <Link href={"#portfolio"} className={desktopLinkStyle}>Portfolio</Link>
-          <Link href={"#experience"} className={desktopLinkStyle}>Experience</Link>
-          <Link href={"#contact"} className={desktopLinkStyle}>Contact</Link>
+          <a href={"#home"} className={desktopLinkStyle}>Home</a>
+          <a href={"#about"} className={desktopLinkStyle}>About</a>
+          <a href={"#skills"} className={desktopLinkStyle}>Skills</a>
+          <a href={"#portfolio"} className={desktopLinkStyle}>Portfolio</a>
+          <a href={"#experience"} className={desktopLinkStyle}>Experience</a>
+          <a href={"#contact"} className={desktopLinkStyle}>Contact</a>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -56,12 +53,12 @@ export default function Navbar() {
       
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-white/95 backdrop-blur-md z-40 transition-all duration-400 ease-in-out md:hidden flex flex-col items-center justify-center gap-6 pt-16 ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
-        <Link href={"#home"} onClick={closeMenu} className={mobileLinkStyle}>Home</Link>
-        <Link href={"#about"} onClick={closeMenu} className={mobileLinkStyle}>About Me</Link>
-        <Link href={"#skills"} onClick={closeMenu} className={mobileLinkStyle}>Skills</Link>
-        <Link href={"#portfolio"} onClick={closeMenu} className={mobileLinkStyle}>Portfolio</Link>
-        <Link href={"#experience"} onClick={closeMenu} className={mobileLinkStyle}>Experience</Link>
-        <Link href={"#contact"} onClick={closeMenu} className={mobileLinkStyle}>Contact</Link>
+        <a href={"#home"} onClick={closeMenu} className={mobileLinkStyle}>Home</a>
+        <a href={"#about"} onClick={closeMenu} className={mobileLinkStyle}>About Me</a>
+        <a href={"#skills"} onClick={closeMenu} className={mobileLinkStyle}>Skills</a>
+        <a href={"#portfolio"} onClick={closeMenu} className={mobileLinkStyle}>Portfolio</a>
+        <a href={"#experience"} onClick={closeMenu} className={mobileLinkStyle}>Experience</a>
+        <a href={"#contact"} onClick={closeMenu} className={mobileLinkStyle}>Contact</a>
         
         <div className="mt-8 pt-8 border-t border-slate-200 flex gap-4 w-3/4 justify-center">
            <a href="https://github.com/prasetyodidi" target="_blank" rel="noreferrer" className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 hover:text-primaryOrange hover:bg-orange-50 transition-colors">

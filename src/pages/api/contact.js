@@ -1,9 +1,9 @@
 import { Resend } from 'resend';
 
 // Initialize Resend with the API key from environment variables
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(import.meta.env.RESEND_API_KEY || process.env.RESEND_API_KEY);
 
-export async function POST(request) {
+export const POST = async ({ request }) => {
   try {
     const { name, email, message } = await request.json();
 
@@ -16,7 +16,7 @@ export async function POST(request) {
     }
 
     // Default to a fallback email if not configured
-    const targetEmail = process.env.CONTACT_EMAIL || 'didiprasetyo360@gmail.com';
+    const targetEmail = import.meta.env.CONTACT_EMAIL || process.env.CONTACT_EMAIL || 'didiprasetyo360@gmail.com';
 
     // Send the email using Resend
     // By default on the free tier, Resend allows sending FROM onboarding@resend.dev TO the verified email address.

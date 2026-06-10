@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 function ExperienceItem({ year, role, company, description, projects, filterTag }) {
   const visibleProjects = projects ? projects.slice(0, 3) : [];
@@ -28,12 +27,12 @@ function ExperienceItem({ year, role, company, description, projects, filterTag 
                 ))}
               </ul>
               {extraCount > 0 && filterTag && (
-                <Link
+                <a
                   href={`/projects?tag=${encodeURIComponent(filterTag)}`}
                   className="inline-block mt-3 text-sm font-bold text-primaryOrange hover:text-orange-600 transition-colors"
                 >
                   See {extraCount} more related project{extraCount > 1 ? 's' : ''} →
-                </Link>
+                </a>
               )}
             </div>
           )}

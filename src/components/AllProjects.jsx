@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { projects } from "../../data/projects";
 import FooterSection from "../components/FooterSection";
@@ -30,10 +28,10 @@ export default function AllProjectsPage({ searchParams }) {
     <main className="min-h-screen bg-slate-50 flex flex-col font-sans">
       {/* Simple Header */}
       <header className="sticky top-0 z-50 flex flex-wrap gap-4 items-center justify-between px-6 md:px-12 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <Link href="/" className="font-bold text-xl text-black flex items-center gap-2 hover:text-primaryOrange transition-colors">
+        <a href="/" className="font-bold text-xl text-black flex items-center gap-2 hover:text-primaryOrange transition-colors">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           Back to Home
-        </Link>
+        </a>
         <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Project Archive</span>
       </header>
 
@@ -75,7 +73,7 @@ export default function AllProjectsPage({ searchParams }) {
             {filteredProjects.map((project, idx) => (
               <div key={idx} className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
                 <div className="relative h-56 w-full overflow-hidden bg-slate-100">
-                  <Image src={project.image} alt={project.label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                  <img src={project.image} alt={project.label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" //>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-bold text-xl mb-3 text-slate-800">{project.label}</h3>
@@ -87,9 +85,9 @@ export default function AllProjectsPage({ searchParams }) {
                       </span>
                     ))}
                   </div>
-                  <Link href={`/projects/${project.slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
+                  <a href={`/projects/${project.slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
                     View Details <span className="transition-all opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1">→</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}

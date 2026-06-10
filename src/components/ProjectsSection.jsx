@@ -1,12 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import { projects } from "../../data/projects";
+import { projects } from "../data/projects";
 
 function ProjectCard({ label, description, image, tags, slug }) {
   return (
     <div className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
       <div className="relative h-56 w-full overflow-hidden bg-slate-100">
-        <Image src={image} alt={label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+        <img src={image} alt={label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="font-bold text-xl mb-3 text-slate-800">{label}</h3>
@@ -18,9 +16,9 @@ function ProjectCard({ label, description, image, tags, slug }) {
             </span>
           ))}
         </div>
-        <Link href={`/projects/${slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
+        <a href={`/projects/${slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
           View Details <span className="transition-all opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1">→</span>
-        </Link>
+        </a>
       </div>
     </div>
   );
@@ -41,10 +39,10 @@ function ProjectsSection() {
         </div>
         
         <div className="text-center">
-          <Link href="/projects" className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl shadow-sm hover:border-slate-900 hover:text-slate-900 transition-all hover:-translate-y-1">
+          <a href="/projects" className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl shadow-sm hover:border-slate-900 hover:text-slate-900 transition-all hover:-translate-y-1">
             View All Projects 
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

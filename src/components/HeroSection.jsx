@@ -1,5 +1,3 @@
-import Image from "next/image";
-import HeroImage from "/public/hero-image.png"
 
 function ButtonLanguage({ label, style }) {
   const buttonStyle = "w-fit font-bold text-sm md:text-xl px-4 md:px-6 py-2 rounded-lg shadow-sm " + style;
@@ -31,7 +29,7 @@ function HeroSection() {
 
       {/* Decorative Hero Image */}
       <div className="absolute right-[-45%] bottom-[-5%] md:top-0 md:right-0 h-[100%] w-[150%] md:w-[750px] z-0 opacity-100 pointer-events-none flex justify-end items-center">
-        <Image priority src={HeroImage} alt="hero image" className="object-contain w-auto h-[120%] md:h-full" />
+        <img priority="true" src="/hero-image.png" alt="hero image" className="object-contain w-auto h-[120%] md:h-full" />
       </div>
 
       <div className="flex flex-col z-10 animate-fade-in-up mt-[-10vh] md:mt-0 relative">

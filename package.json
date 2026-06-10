@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "build": "astro build",
+    "start": "astro preview",
+    "lint": "next lint",
+    "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/react": "^5.0.7",
+    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/vercel": "^10.0.8",
     "@react-email/render": "^2.0.4",
+    "astro": "^6.4.5",
     "autoprefixer": "10.4.14",
     "eslint": "8.46.0",
-    "eslint-config-next": "13.4.13",
-    "next": "13.4.13",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
