@@ -11,7 +11,7 @@ function FooterSection() {
           <a
             href="https://github.com/prasetyodidi"
             target="_blank"
-            className="text-primaryOrange hover:underline underline-offset-2 transition-all"
+            className="text-orange-700 hover:underline underline-offset-2 transition-all"
           >
             GitHub
           </a>. All rights reserved.

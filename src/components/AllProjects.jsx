@@ -28,7 +28,7 @@ export default function AllProjectsPage({ searchParams }) {
     <main className="min-h-screen bg-slate-50 flex flex-col font-sans">
       {/* Simple Header */}
       <header className="sticky top-0 z-50 flex flex-wrap gap-4 items-center justify-between px-6 md:px-12 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <a href="/" className="font-bold text-xl text-black flex items-center gap-2 hover:text-primaryOrange transition-colors">
+        <a href="/" className="font-bold text-xl text-black flex items-center gap-2 hover:text-orange-700 transition-colors">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           Back to Home
         </a>
@@ -85,7 +85,7 @@ export default function AllProjectsPage({ searchParams }) {
                       </span>
                     ))}
                   </div>
-                  <a href={`/projects/${project.slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
+                  <a href={`/projects/${project.slug}`} className="text-orange-700 font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
                     View Details <span className="transition-all opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1">→</span>
                   </a>
                 </div>

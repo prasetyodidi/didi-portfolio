@@ -61,7 +61,7 @@ function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-slate-500 mb-1">Email</p>
-                  <p className="font-semibold group-hover:text-primaryOrange transition-colors">didiprasetyo360@gmail.com</p>
+                  <p className="font-semibold group-hover:text-orange-700 transition-colors">didiprasetyo360@gmail.com</p>
                 </div>
               </a>
 
@@ -71,7 +71,7 @@ function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-slate-500 mb-1">GitHub</p>
-                  <p className="font-semibold group-hover:text-primaryOrange transition-colors">github.com/prasetyodidi</p>
+                  <p className="font-semibold group-hover:text-orange-700 transition-colors">github.com/prasetyodidi</p>
                 </div>
               </a>
             </div>

@@ -16,7 +16,7 @@ function ProjectCard({ label, description, image, tags, slug }) {
             </span>
           ))}
         </div>
-        <a href={`/projects/${slug}`} className="text-primaryOrange font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
+        <a href={`/projects/${slug}`} className="text-orange-700 font-bold hover:text-orange-600 transition-colors inline-flex items-center text-sm group-hover:gap-1">
           View Details <span className="transition-all opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-1">→</span>
         </a>
       </div>

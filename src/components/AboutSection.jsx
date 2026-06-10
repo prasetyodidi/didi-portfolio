@@ -7,7 +7,7 @@ function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
             <p>
-              Hello there! 👋 I&apos;m <span className="font-semibold text-primaryOrange">Didi Prasetyo</span>, an enthusiastic Web Developer and UI/UX Designer based in Central Java, Indonesia.
+              Hello there! 👋 I&apos;m <span className="font-semibold text-orange-700">Didi Prasetyo</span>, an enthusiastic Web Developer and UI/UX Designer based in Central Java, Indonesia.
             </p>
             <p>
               With 5 years of professional experience, I have developed a strong passion for solving complex backend logic while simultaneously crafting intuitive, beautiful user interfaces on the frontend.

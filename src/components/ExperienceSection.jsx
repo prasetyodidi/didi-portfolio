@@ -12,7 +12,7 @@ function ExperienceItem({ year, role, company, description, projects, filterTag 
       <div className="absolute left-[calc(1rem-4px)] sm:left-[calc(7.5rem-4px)] top-8 w-2 h-2 rounded-full bg-primaryOrange outline outline-4 outline-white"></div>
 
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 items-start">
-        <div className="text-primaryOrange font-bold text-sm sm:w-20 pt-1 flex-shrink-0">{year}</div>
+        <div className="text-orange-700 font-bold text-sm sm:w-20 pt-1 flex-shrink-0">{year}</div>
         <div>
           <h3 className="text-xl font-bold text-slate-800">{role}</h3>
           <h4 className="text-md font-medium text-slate-500 mb-3">{company}</h4>
@@ -29,7 +29,7 @@ function ExperienceItem({ year, role, company, description, projects, filterTag 
               {extraCount > 0 && filterTag && (
                 <a
                   href={`/projects?tag=${encodeURIComponent(filterTag)}`}
-                  className="inline-block mt-3 text-sm font-bold text-primaryOrange hover:text-orange-600 transition-colors"
+                  className="inline-block mt-3 text-sm font-bold text-orange-700 hover:text-orange-600 transition-colors"
                 >
                   See {extraCount} more related project{extraCount > 1 ? 's' : ''} →
                 </a>
