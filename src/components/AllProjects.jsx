@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { projects } from "../../data/projects";
-import FooterSection from "../components/FooterSection";
+import { projects } from "../data/projects.js";
+import FooterSection from "./FooterSection.jsx";
 
 export default function AllProjectsPage({ searchParams }) {
   // Extract unique tags from all projects
@@ -73,7 +73,7 @@ export default function AllProjectsPage({ searchParams }) {
             {filteredProjects.map((project, idx) => (
               <div key={idx} className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
                 <div className="relative h-56 w-full overflow-hidden bg-slate-100">
-                  <img src={project.image} alt={project.label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" //>
+                  <img src={project.image} alt={project.label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-bold text-xl mb-3 text-slate-800">{project.label}</h3>
