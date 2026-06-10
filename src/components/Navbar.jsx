@@ -25,7 +25,7 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-50 flex flex-row justify-between items-center px-6 md:px-12 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <a href="#home" onClick={closeMenu} className="flex items-center gap-2 z-50">
-          <img src="/didi-logo.png" alt="Didi Prasetyo Logo" width={40} height={40} className="rounded-full object-cover shadow-sm" />
+          <img src="/didi-logo.webp" alt="Didi Prasetyo Logo" width={40} height={40} className="rounded-full object-cover shadow-sm" />
           <span className="font-bold text-xl text-black ml-2">Didi Prasetyo</span>
         </a>
 

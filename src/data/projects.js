@@ -1,4 +1,4 @@
-const Image1 = "/image1.png";
+const Image1 = "/image1.webp";
 const Image2 = "/didi-profesional-foto.webp";
 
 export const projects = [
