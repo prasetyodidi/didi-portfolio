@@ -1,5 +1,5 @@
-import Image1 from "@public/image1.png";
-import Image2 from "@public/didi-profesional-foto.png"
+const Image1 = "/image1.png";
+const Image2 = "/didi-profesional-foto.png";
 
 export const projects = [
   {
