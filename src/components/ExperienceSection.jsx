@@ -71,9 +71,9 @@ function ExperienceSection() {
     },
     {
       year: "2021 - 2022",
-      role: "Android Developer",
-      company: "Side Projects",
-      description: "Built and published native Android applications including GitHub User, Kos App, and Covid Tracker, utilizing Kotlin, RESTful APIs, and modern architecture patterns."
+      role: "Android Developer Intern",
+      company: "CV Nurvindo",
+      description: "Developed 'Kos App', a native Android application for boarding house management. The app enables tenants to track payment due dates and communicate directly with landlords using Kotlin and Room DB."
     }
   ];
 
