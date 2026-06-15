@@ -1,4 +1,4 @@
-const PlaceholderImage = "/confidential-placeholder.png";
+const PlaceholderImage = "/confidential-placeholder.webp";
 const ImageRoster = "/image1.webp";
 
 export const projects = [
