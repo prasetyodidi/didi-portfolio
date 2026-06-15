@@ -7,6 +7,7 @@ import ProjectsSection from '../components/ProjectsSection.jsx';
 import ExperienceSection from '../components/ExperienceSection.jsx';
 import ContactSection from '../components/ContactSection.jsx';
 import FooterSection from '../components/FooterSection.jsx';
+import EducationSection from '../components/EducationSection.jsx';
 import Navbar from '../components/Navbar.jsx';
 ---
 
@@ -24,7 +25,8 @@ import Navbar from '../components/Navbar.jsx';
 		<div id="portfolio">
 			<ProjectsSection />
 		</div>
-		<ExperienceSection />
+		<ExperienceSection client:load />
+		<EducationSection client:load />
 		
 		<ContactSection client:visible />
 		
