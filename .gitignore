@@ -44,3 +44,6 @@ dist/
 
 # Lighthouse
 lighthouse-result*.json
+
+# Custom Scripts
+scripts/fetch_certificates.mjs
