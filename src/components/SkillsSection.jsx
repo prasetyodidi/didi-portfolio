@@ -1,27 +1,27 @@
 function SkillsSection() {
   const skillCategories = [
     {
-      title: "Backend & Systems",
-      icon: <svg className="w-8 h-8 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>,
-      skills: ["Golang", "PHP", "Rust", "Node.js"],
+      title: "Programming Languages",
+      icon: <svg className="w-8 h-8 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>,
+      skills: ["Python", "Golang", "PHP", "JavaScript", "C++", "Rust"],
       color: "bg-blue-100 text-blue-800"
     },
     {
-      title: "Mobile Development",
-      icon: <svg className="w-8 h-8 mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>,
-      skills: ["Android Native", "Kotlin", "Flutter"],
+      title: "Frameworks & Libraries",
+      icon: <svg className="w-8 h-8 mb-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>,
+      skills: ["Laravel", "React.js", "Next.js", "Gin", "TensorFlow", "Keras", "Scikit-Learn"],
       color: "bg-green-100 text-green-800"
     },
     {
-      title: "Frontend & Web",
-      icon: <svg className="w-8 h-8 mb-4 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>,
-      skills: ["Next.js", "React", "Tailwind CSS", "JavaScript"],
+      title: "Infrastructure & Tools",
+      icon: <svg className="w-8 h-8 mb-4 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>,
+      skills: ["Nginx", "PostgreSQL", "MySQL", "MQTT", "MinIO", "AWS", "Git"],
       color: "bg-yellow-100 text-yellow-800"
     },
     {
-      title: "UI/UX & Tools",
-      icon: <svg className="w-8 h-8 mb-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>,
-      skills: ["Figma", "Git", "Postman", "Linux"],
+      title: "Hardware / IoT",
+      icon: <svg className="w-8 h-8 mb-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>,
+      skills: ["ESP8266", "Arduino", "Actuators", "Biometric Scanners"],
       color: "bg-purple-100 text-purple-800"
     }
   ];
