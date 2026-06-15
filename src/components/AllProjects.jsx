@@ -72,8 +72,8 @@ export default function AllProjectsPage({ searchParams }) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, idx) => (
               <div key={idx} className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
-                <div className="relative h-56 w-full overflow-hidden bg-slate-100">
-                  <img src={project.image} alt={project.label} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                <div className="relative h-56 w-full overflow-hidden bg-slate-100 flex items-center justify-center">
+                  <img src={project.image} alt={project.label} className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${project.platform === 'mobile' ? 'object-contain py-4' : 'object-cover'}`} />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="font-bold text-xl mb-3 text-slate-800">{project.label}</h3>
