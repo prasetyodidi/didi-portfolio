@@ -38,7 +38,7 @@ function HeroSection() {
           <span className="font-semibold">Didi Prasetyo</span>
         </h1>
         <p className="text-slate-600 md:text-slate-500 mt-6 md:mt-8 text-base sm:text-lg md:text-xl max-w-lg leading-relaxed">
-          I am a professional programmer with more<br className="hidden sm:block" /> than 5 years of experience.
+          I am a professional programmer with more<br className="hidden sm:block" /> than 4 years of experience.
         </p>
         <a href="#contact" className="mt-8 md:mt-10 w-fit px-8 md:px-10 py-3 md:py-4 rounded-full text-white bg-primaryOrange font-medium hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30">
           Hire Me
