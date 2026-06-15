@@ -1,4 +1,4 @@
-import { projects } from "../data/projects.js";
+import { projects, featuredProjectSlugs } from "../data/projects.js";
 
 function ProjectCard({ label, description, image, tags, slug, platform }) {
   return (
@@ -25,7 +25,9 @@ function ProjectCard({ label, description, image, tags, slug, platform }) {
 }
 
 function ProjectsSection() {
-  const featuredProjects = projects.slice(0, 2); // Show only top 2 features
+  const featuredProjects = (featuredProjectSlugs && featuredProjectSlugs.length > 0)
+    ? featuredProjectSlugs.map(slug => projects.find(p => p.slug === slug)).filter(Boolean)
+    : projects.slice(0, 2);
 
   return (
     <section id="portfolio" className="py-24 px-6 md:px-12 bg-slate-50 min-h-screen flex flex-col justify-center">

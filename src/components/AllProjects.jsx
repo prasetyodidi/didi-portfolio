@@ -18,7 +18,8 @@ export default function AllProjectsPage({ searchParams }) {
     if (tagFromUrl && allTags.includes(decodeURIComponent(tagFromUrl))) {
       setActiveTag(decodeURIComponent(tagFromUrl));
     }
-  }, [allTags]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const filteredProjects = activeTag === "All" 
     ? projects 
