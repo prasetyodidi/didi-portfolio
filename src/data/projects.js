@@ -9,7 +9,7 @@ export const projects = [
     content: "This project successfully handled thousands of attendees seamlessly during the Muktamar event. By utilizing a QR code scanning mechanism, we reduced the registration bottleneck and provided instant WhatsApp notifications to the guests upon successful check-in. The backend architecture was built to handle high concurrency, ensuring zero downtime throughout the event's peak hours.",
     image: PlaceholderImage,
     gallery: [PlaceholderImage, PlaceholderImage],
-    tags: ["WhatsApp API", "QR Code", "Backend", "Next.js"],
+    tags: ["WhatsApp API", "QR Code", "Backend", "Next.js", "Freelance"],
     platform: "web",
     githubLink: "",
     liveLink: ""
@@ -21,7 +21,7 @@ export const projects = [
     content: "Developed as a comprehensive internal tool suite, this application allows administration staff to assign rosters dynamically. The system features role-based access control, a rich dashboard for data visualization, and an optimized frontend for managing large tables without performance lags.",
     image: ImageRoster,
     gallery: [ImageRoster],
-    tags: ["Laravel", "Tailwind CSS", "Web App"],
+    tags: ["Laravel", "Tailwind CSS", "Web App", "Freelance"],
     platform: "web",
     githubLink: "",
     liveLink: ""
@@ -33,7 +33,7 @@ export const projects = [
     content: "Engineered to improve academic operational efficiency, this platform enables students to submit extracurricular achievements and administration staff to evaluate SKPM metrics seamlessly.",
     image: PlaceholderImage,
     gallery: [],
-    tags: ["Laravel", "Tailwind CSS", "Web App"],
+    tags: ["Laravel", "Tailwind CSS", "Web App", "Freelance"],
     platform: "web",
     githubLink: "",
     liveLink: ""
@@ -45,7 +45,7 @@ export const projects = [
     content: "Developed a scalable SaaS platform for digital wedding invitations. Engineered a dynamic split-screen visual editor where users can customize invitation components with a real-time live preview. Architected a robust routing system using an Nginx reverse proxy that dynamically maps external custom domains to specific user slugs with strict security validation.",
     image: PlaceholderImage,
     gallery: [],
-    tags: ["Laravel", "React.js", "Nginx", "SaaS"],
+    tags: ["Laravel", "React.js", "Nginx", "SaaS", "Freelance"],
     platform: "web",
     githubLink: "",
     liveLink: ""
@@ -57,7 +57,7 @@ export const projects = [
     content: "Designed and developed decoupled RESTful API services connecting the frontend to a PostgreSQL database. Implemented a comprehensive Role-Based Access Control (RBAC) system utilizing Laravel Sanctum tokens. Built backend logic to process transaction proof uploads into local server storage with robust file validations.",
     image: PlaceholderImage,
     gallery: [],
-    tags: ["Backend", "Laravel", "PostgreSQL", "API"],
+    tags: ["Backend", "Laravel", "PostgreSQL", "API", "Freelance"],
     platform: "web",
     githubLink: "",
     liveLink: "https://iitc.intermediaamikom.org/"
@@ -69,7 +69,7 @@ export const projects = [
     content: "Aplikasi mobile yang dikembangkan selama masa internship. Aplikasi ini membantu penyewa atau penghuni kos untuk melihat tanggal jatuh tempo pembayaran sewa dan menyediakan fitur chat langsung dengan pemilik kos. Menggunakan Room DB untuk local storage dan Maps untuk integrasi lokasi.",
     image: "/kos-app/home-screen.webp",
     gallery: ["/kos-app/login-screen.webp", "/kos-app/register-screen.webp", "/kos-app/home-screen.webp", "/kos-app/sidebar.webp", "/kos-app/about-screen.webp", "/kos-app/splash-screen.webp"],
-    tags: ["Android", "Kotlin", "Room DB", "Maps", "Internship Project"],
+    tags: ["Android", "Kotlin", "Room DB", "Maps", "Internship Project", "CV Nurvindo"],
     platform: "mobile",
     githubLink: "https://github.com/prasetyodidi/kos-app",
     liveLink: ""

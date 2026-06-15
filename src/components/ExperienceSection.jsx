@@ -20,25 +20,16 @@ function ExperienceItem({ year, role, company, description, projects, filterTag 
 
           {visibleProjects.length > 0 && (
             <div className="mt-4">
-              <h5 className="text-sm font-bold text-slate-800 mb-3">Key Projects:</h5>
-              <ul className="pl-0 space-y-3">
+              <h5 className="text-sm font-bold text-slate-800 mb-2">Key Projects:</h5>
+              <ul className="list-disc pl-5 space-y-1">
                 {visibleProjects.map((proj, idx) => (
-                  <li key={idx} className="text-sm text-slate-600 leading-relaxed block border-l-2 border-slate-200 pl-3">
-                    <span className="font-bold text-slate-800 block mb-1">{proj.name}</span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {proj.tags.map(tag => (
-                        <span key={tag} className="text-[10px] font-bold px-2 py-0.5 bg-slate-100 text-slate-500 rounded-md">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </li>
+                  <li key={idx} className="text-sm text-slate-600 leading-relaxed">{proj}</li>
                 ))}
               </ul>
               {extraCount > 0 && filterTag && (
                 <a
                   href={`/projects?tag=${encodeURIComponent(filterTag)}`}
-                  className="inline-block mt-4 text-sm font-bold text-orange-700 hover:text-orange-600 transition-colors"
+                  className="inline-block mt-3 text-sm font-bold text-orange-700 hover:text-orange-600 transition-colors"
                 >
                   See {extraCount} more related project{extraCount > 1 ? 's' : ''} →
                 </a>
@@ -59,13 +50,13 @@ function ExperienceSection() {
       company: "Self-Employed",
       description: "Developing custom web applications, backend architectures, and responsive frontend interfaces for various clients. Accumulated professional experience handling complex integrations.",
       projects: [
-        { name: "Insurance Accounting System", tags: ["Laravel", "React.js"] },
-        { name: "Weddingnesia (SaaS Digital Invitation)", tags: ["Laravel", "React.js", "Nginx"] },
-        { name: "IITC Backend Platform", tags: ["Laravel", "PostgreSQL", "API"] },
-        { name: "Large-Scale Event Management (Muktamar)", tags: ["WhatsApp API", "QR Code", "Next.js"] },
-        { name: "Roster & SKPM Web App", tags: ["Laravel", "Tailwind CSS"] }
+        "Insurance Accounting System",
+        "Weddingnesia (SaaS Digital Invitation)",
+        "IITC Backend Platform",
+        "Large-Scale Event Management (Muktamar)",
+        "Roster & SKPM Web App"
       ],
-      filterTag: "Web App"
+      filterTag: "Freelance"
     },
     {
       year: "2025 - 2026",
@@ -73,11 +64,12 @@ function ExperienceSection() {
       company: "PT Pusat Teknologi Nusantara",
       description: "Architected scalable backend services, managed monolithic MVP development, and implemented direct hardware-to-software biometric integrations.",
       projects: [
-        { name: "Social Media Platform MVP", tags: ["Laravel"] },
-        { name: "Centralized Auth & API Services", tags: ["Golang", "Python"] },
-        { name: "MinIO Object Storage Infrastructure", tags: ["MinIO"] },
-        { name: "HR Attendance System Integration", tags: ["Biometrics", "Hardware"] }
-      ]
+        "Social Media Platform MVP",
+        "Centralized Auth & API Services",
+        "MinIO Object Storage Infrastructure",
+        "HR Attendance System Integration"
+      ],
+      filterTag: "PT Pusat Teknologi Nusantara"
     },
     {
       year: "2022 - 2026",
@@ -85,10 +77,11 @@ function ExperienceSection() {
       company: "University",
       description: "Pursuing a degree in Computer Science. Actively engaged in machine learning research, IoT prototyping, and capstone projects.",
       projects: [
-        { name: "SEHAT? (Bangkit Academy Capstone)", tags: ["Python", "TensorFlow", "Keras"] },
-        { name: "Predictive Modeling (Undergraduate Thesis)", tags: ["Machine Learning", "Random Forest", "XGBoost"] },
-        { name: "IoT Automatic Gate System", tags: ["Golang", "MQTT", "ESP8266"] }
-      ]
+        "SEHAT? (Bangkit Academy Capstone)",
+        "Predictive Modeling (Undergraduate Thesis)",
+        "IoT Automatic Gate System"
+      ],
+      filterTag: "University"
     },
     {
       year: "2021 - 2022",
@@ -96,9 +89,9 @@ function ExperienceSection() {
       company: "CV Nurvindo",
       description: "Developed 'Kos App', a native Android application for boarding house management. The app enables tenants to track payment due dates and communicate directly with landlords.",
       projects: [
-        { name: "Kos App", tags: ["Android", "Kotlin", "Room DB", "Maps"] }
+        "Kos App"
       ],
-      filterTag: "Android"
+      filterTag: "CV Nurvindo"
     }
   ];
 
