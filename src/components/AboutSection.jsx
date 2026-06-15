@@ -7,13 +7,13 @@ function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
             <p>
-              Hello there! 👋 I&apos;m <span className="font-semibold text-orange-700">Didi Prasetyo</span>, an enthusiastic Web Developer and UI/UX Designer based in Central Java, Indonesia.
+              <span className="font-semibold text-orange-700">Fullstack Engineer</span> with 4+ years of hands-on experience building scalable architectures, reliable API services, and robust data infrastructures. Adept at navigating complex business logic, from distributed backend services using Golang and Python to monolithic MVPs with Laravel.
             </p>
             <p>
-              With 5 years of professional experience, I have developed a strong passion for solving complex backend logic while simultaneously crafting intuitive, beautiful user interfaces on the frontend.
+              Proven track record of architecting high-concurrency event management systems and integrating hardware with software solutions. Possess a strong foundation in Artificial Intelligence and Machine Learning pipelines, backed by predictive modeling research and global certifications.
             </p>
             <p>
-              As a Computer Science student, I continually explore fascinating new technologies. Whether I&apos;m designing systems in Golang or tracing pixel-perfect layouts in React, I am driven by the desire to build robust, scalable applications that deliver real value.
+              Passionate about modern development workflows, low-level system design (Rust, Web3), and delivering scalable, high-performance solutions in fast-paced environments.
             </p>
           </div>
           <div className="relative h-[26rem] w-full rounded-2xl overflow-hidden shadow-2xl group border-4 border-white">
