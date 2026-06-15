@@ -41,3 +41,6 @@ plan
 # Astro
 dist/
 .astro/
+
+# Lighthouse
+lighthouse-result*.json
