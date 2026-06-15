@@ -23,7 +23,15 @@ function ExperienceItem({ year, role, company, description, projects, filterTag 
               <h5 className="text-sm font-bold text-slate-800 mb-2">Key Projects:</h5>
               <ul className="list-disc pl-5 space-y-1">
                 {visibleProjects.map((proj, idx) => (
-                  <li key={idx} className="text-sm text-slate-600 leading-relaxed">{proj}</li>
+                  <li key={idx} className="text-sm text-slate-600 leading-relaxed">
+                    {filterTag ? (
+                      <a href={`/projects?tag=${encodeURIComponent(filterTag)}`} className="hover:underline hover:text-orange-700 transition-colors">
+                        {proj}
+                      </a>
+                    ) : (
+                      proj
+                    )}
+                  </li>
                 ))}
               </ul>
               {extraCount > 0 && filterTag && (
@@ -51,12 +59,11 @@ function ExperienceSection() {
       description: "Developing custom web applications, backend architectures, and responsive frontend interfaces for various clients. Accumulated professional experience handling complex integrations.",
       projects: [
         "Insurance Accounting System",
-        "Weddingnesia (SaaS Digital Invitation)",
-        "IITC Backend Platform",
         "Large-Scale Event Management (Muktamar)",
-        "Roster & SKPM Web App"
+        "Roster Web App",
+        "SKPM Web App"
       ],
-      filterTag: "Freelance"
+      filterTag: "Self-Employed"
     },
     {
       year: "2025 - 2026",
@@ -79,7 +86,9 @@ function ExperienceSection() {
       projects: [
         "SEHAT? (Bangkit Academy Capstone)",
         "Predictive Modeling (Undergraduate Thesis)",
-        "IoT Automatic Gate System"
+        "IoT Automatic Gate System",
+        "IITC Backend Platform",
+        "Weddingnesia (SaaS Digital Invitation)"
       ],
       filterTag: "University"
     },
