@@ -12,6 +12,12 @@ export const projects = [
     label: "SEHAT? (Bangkit Academy Capstone)",
     description: "An integrated mental health application featuring an NLP model for mental state classification and a K-Means based music recommendation system.",
     content: "Developed the core AI models and recommendation systems for SEHAT?, an integrated mental health application. Built a Deep Learning NLP model using TensorFlow and Keras, implementing an LSTM network with TextVectorization and Embedding layers to analyze user chat inputs and classify mental states across 7 categories (e.g., normal, depression, stress). Engineered a personalized music recommendation system using Scikit-Learn. Utilized K-Means clustering and PCA for song feature analysis, and applied Cosine Similarity to suggest music tailored to the user's predicted mood.",
+    caseStudy: {
+      problem: "Sekitar 1 dari 10 orang di Indonesia mengalami gangguan mental. Sebagian besar aplikasi kesehatan hanya berfokus pada satu aspek tanpa pendekatan holistik. Dibutuhkan solusi digital terintegrasi untuk fisik dan mental.",
+      approach: "Membangun aplikasi SEHAT? untuk mengelola kesehatan fisik dan mental secara bersamaan.",
+      tech: "Pengembangan NLP menggunakan LSTM, TextVectorization, PCA, dan K-Means Clustering untuk klasifikasi dan rekomendasi musik.",
+      outcome: "Secara teknis, model klasifikasi berbasis NLP berhasil diimplementasikan untuk menganalisis kondisi pengguna. Proyek ini sukses diwujudkan menjadi aplikasi fungsional yang mampu mengidentifikasi dan memecahkan masalah kesehatan mental-fisik secara nyata dan terintegrasi."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Python", "TensorFlow", "Keras", "Machine Learning", "University"],
@@ -33,6 +39,12 @@ export const projects = [
     label: "Predictive Modeling (Undergraduate Thesis)",
     description: "An end-to-end multi-label classification pipeline to predict student learning behaviors using ELS activity logs.",
     content: "Engineered an end-to-end multi-label classification pipeline to predict student learning behaviors based on the Felder-Silverman Learning Style Model using ELS activity logs. Resolved extreme dataset class imbalance via Random Oversampling and handled missing data using median imputation methodologies. Conducted rigorous hyperparameter tuning and model evaluation using Nested Cross-Validation. Successfully demonstrated that the Random Forest algorithm outperformed XGBoost, establishing it as the most stable and accurate model for behavioral datasets.",
+    caseStudy: {
+      problem: "Prediksi gaya belajar di ELS saat ini terbatas pada pendekatan single-label, padahal mahasiswa memiliki kombinasi gaya belajar (FSLSM) simultan. Data log juga mengalami class imbalance ekstrem (17.5:1).",
+      approach: "Menerapkan pendekatan multi-label classification dengan imputasi median dan Random Oversampling untuk menyeimbangkan data.",
+      tech: "Pengujian algoritma Random Forest, XGBoost, SVM, dan RBF Network, divalidasi dengan Nested Cross-Validation.",
+      outcome: "Random Forest terbukti paling akurat (F1-Macro 0.7063) dan stabil (standar deviasi ±0.0794) dibandingkan algoritma lainnya."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Python", "Machine Learning", "Random Forest", "Data Science", "University"],
@@ -53,6 +65,12 @@ export const projects = [
     label: "IoT Automatic Gate System",
     description: "An end-to-end IoT smart gate platform allowing automated access through secure QR code scanning.",
     content: "Developed an end-to-end IoT smart gate platform that allows automated access for residential or office environments through secure QR code scanning. Architected the backend infrastructure using Golang and the Gin framework. Independently built and deployed a custom high-performance MQTT Broker using the mochi-mqtt library. Engineered the hardware prototype using an ESP8266 microcontroller connected to a 180-degree servo motor. Designed the authentication flow where users scan a web-based QR code (Next.js), triggering backend validation to actuate the gate instantaneously.",
+    caseStudy: {
+      problem: "Karyawan sering tertinggal kartu akses fisik. Perusahaan juga kesulitan melacak, memberikan, atau memutus akses karyawan baru/keluar secara instan.",
+      approach: "Menerapkan sistem pintu tanpa kartu fisik yang dikontrol via protokol MQTT agar respons gerbang sangat cepat (< 1 detik).",
+      tech: "Golang (Gin), Custom Mochi-MQTT Broker, C++ (ESP8266), Next.js.",
+      outcome: "Akses keluar masuk menjadi seamless bagi karyawan maupun HR, dengan waktu respons aktuator gerbang hitungan milidetik."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Golang", "MQTT", "ESP8266", "IoT", "Next.js", "University"],
@@ -73,6 +91,12 @@ export const projects = [
     label: "Insurance Accounting System",
     description: "Comprehensive financial system with complex accounting logic and enterprise integrations.",
     content: "Built a comprehensive financial system using Laravel and React.js. Translated complex financial logic (Chart of Accounts, General Ledger, Balance Sheets) into precise backend architecture and integrated the platform seamlessly with other enterprise workflows.",
+    caseStudy: {
+      problem: "Perlu pencatatan keuangan tersentralisasi secara end-to-end untuk perusahaan skala Holding (Holding -> Perusahaan -> Cabang -> Mitra), tanpa kebocoran data antar entitas (data bleeding).",
+      approach: "Menerapkan Data Office sebagai first-class citizen. Setiap fitur akan terikat dengan struktur hierarki office tertinggi (Holding), mendukung arsitektur multi-tenant untuk banyak holding sekaligus.",
+      tech: "Laravel, PostgreSQL, Redis (Caching report & static data), Docker, CI/CD via GitHub Actions, AWS S3 Storage, Integrasi Core System Asuransi.",
+      outcome: "Pencatatan keuangan (target, pendapatan, pengeluaran) terjamin akurasinya secara end-to-end dengan isolasi data yang sangat ketat antar level entitas perusahaan."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Laravel", "React.js", "Backend", "Web App", "Self-Employed"],
@@ -92,6 +116,12 @@ export const projects = [
     label: "Social Media Platform MVP",
     description: "Monolithic MVP for a new social media platform driven from initial concept to a fully functional prototype.",
     content: "Spearheaded the development of a monolithic MVP using Laravel for a new social media platform, driving the product from initial concept to a fully functional prototype.",
+    caseStudy: {
+      problem: "Instansi membutuhkan platform portal informasi dan blogging yang resmi, namun semudah menggunakan Facebook, tanpa kurva pelatihan pengguna.",
+      approach: "Membangun MVP Media Sosial dengan dukungan custom domain agar blog setiap instansi terlihat resmi dan memiliki tingkat kredibilitas tinggi.",
+      tech: "Laravel (Fullstack), PostgreSQL, Docker.",
+      outcome: "Platform MVP berhasil diluncurkan dengan cepat, memungkinkan instansi untuk mandiri membagikan konten edukasi/informasi dengan identitas brand mereka sendiri."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Laravel", "Backend", "Web App", "PT Pusat Teknologi Nusantara"],
@@ -110,6 +140,12 @@ export const projects = [
     label: "Centralized Auth & API Services",
     description: "Scalable backend services for high-performance API delivery and centralized authentication.",
     content: "Architected and deployed scalable backend services using Golang for high-performance API delivery and Python for centralized authentication across multiple related applications.",
+    caseStudy: {
+      problem: "Karyawan harus melakukan otentikasi berulang kali untuk mengakses layanan internal perusahaan yang berbeda-beda.",
+      approach: "Mengimplementasikan Single Sign-On (SSO) terpusat menggunakan proyek open-source Authentik secara self-hosted.",
+      tech: "Golang, Python, Authentik (goauthentik.io), OIDC/SAML.",
+      outcome: "Perusahaan memiliki sistem SSO mandiri yang mempermudah akses user. Sistem ini juga scalable dan bisa diintegrasikan dengan external service karena menggunakan standar internasional."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Golang", "Python", "API", "Backend", "PT Pusat Teknologi Nusantara"],
@@ -128,6 +164,12 @@ export const projects = [
     label: "MinIO Object Storage Infrastructure",
     description: "Robust object storage infrastructure optimized for data retrieval and system reliability.",
     content: "Engineered and independently managed a robust object storage infrastructure using MinIO, optimizing data retrieval and system reliability for enterprise-scale usage.",
+    caseStudy: {
+      problem: "Perusahaan memiliki berbagai layanan yang menyimpan data sensitif dan butuh penyimpanan terpusat yang aman, namun solusi Cloud S3 memakan biaya operasional yang tinggi.",
+      approach: "Menjalankan self-hosted S3 service menggunakan MinIO yang kencang, aman untuk data sensitif, dan mendukung hingga skala multi-terabyte tanpa melanggar kepatuhan data.",
+      tech: "MinIO, S3 Compatible APIs.",
+      outcome: "Seluruh aplikasi di perusahaan kini tersentralisasi ke satu wadah storage dengan kemudahan akses setara AWS S3, menghemat biaya operasional secara massal."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["MinIO", "Infrastructure", "Cloud", "PT Pusat Teknologi Nusantara"],
@@ -146,6 +188,12 @@ export const projects = [
     label: "HR Attendance System Integration",
     description: "Seamless hardware-to-software integration connecting attendance systems with biometric fingerprint devices.",
     content: "Developed a seamless hardware-to-software integration by connecting a human resource attendance system directly with biometric fingerprint devices.",
+    caseStudy: {
+      problem: "Pencatatan kehadiran karyawan sering menjadi kendala bagi instansi klien maupun internal perusahaan, terutama mencari metode presensi yang paling pas untuk dinamika staf lapangan vs kantor.",
+      approach: "Membangun sistem layanan SaaS (Business-to-Business) berarsitektur omnichannel. Ini memberikan opsi fleksibilitas bagi klien instansi untuk memilih input presensi yang sesuai kebutuhan mereka (Mobile, Web, atau Mesin).",
+      tech: "Laravel (Admin & Web), PostgreSQL, Android Mobile Client, API Integrasi Mesin Biometrik (Sidik Jari & Wajah).",
+      outcome: "Sistem ini sukses di-maintenance dan diandalkan sebagai layanan service perusahaan untuk eksternal klien maupun pemakaian internal, menyatukan rekapitulasi data kehadiran dalam Single Source of Truth."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Hardware Integration", "Backend", "PT Pusat Teknologi Nusantara"],
@@ -219,6 +267,12 @@ export const projects = [
     label: "Weddingnesia (Digital Invitation Platform)",
     description: "Scalable SaaS platform for digital wedding invitations.",
     content: "Developed a scalable SaaS platform for digital wedding invitations. Engineered a dynamic split-screen visual editor where users can customize invitation components with a real-time live preview. Architected a robust routing system using an Nginx reverse proxy that dynamically maps external custom domains to specific user slugs with strict security validation.",
+    caseStudy: {
+      problem: "Undangan fisik tidak efisien (boros kertas) dan menyulitkan pengelola acara maupun tamu.",
+      approach: "Membangun SaaS Undangan Digital multi-tenant. Menerapkan dynamic routing via Nginx karena lebih efisien dan cepat untuk memproses custom domain tiap klien.",
+      tech: "Laravel, React.js, Nginx Reverse Proxy.",
+      outcome: "Sistem berhasil dibangun, berjalan secara live, dan menjadi salah satu proyek yang berhasil menerima hibah pendanaan tingkat nasional (P2MW Kemdikbudristek 2023)."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Laravel", "React.js", "Nginx", "SaaS", "University"],
@@ -240,6 +294,12 @@ export const projects = [
     label: "IITC (Intermedia Information Technology Competition)",
     description: "Robust backend architecture for a university-level technology competition platform.",
     content: "Designed and developed decoupled RESTful API services connecting the frontend to a PostgreSQL database. Implemented a comprehensive Role-Based Access Control (RBAC) system utilizing Laravel Sanctum tokens. Built backend logic to process transaction proof uploads into local server storage with robust file validations.",
+    caseStudy: {
+      problem: "Aplikasi sebelumnya (monolitik) mengalami masalah waktu respons (lambat) ketika digunakan oleh ratusan peserta secara bersamaan.",
+      approach: "Memisahkan tanggung jawab (Decoupling) menjadi Backend dan Frontend agar lebih bebas memilih teknologi spesifik dan menyebarkan beban server.",
+      tech: "Laravel REST API, PostgreSQL, Sanctum RBAC.",
+      outcome: "Sistem berhasil menangani ratusan peserta dengan waktu respons yang jauh lebih cepat, proses pembayaran lancar, dan tampilan UI yang lebih fresh."
+    },
     image: PlaceholderImage,
     gallery: [],
     tags: ["Backend", "Laravel", "PostgreSQL", "API", "University"],
