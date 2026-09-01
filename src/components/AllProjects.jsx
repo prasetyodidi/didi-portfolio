@@ -7,7 +7,7 @@ import FooterSection from "./FooterSection.jsx";
 export default function AllProjectsPage({ searchParams }) {
   // Extract unique tags from all projects
   const allTags = Array.from(new Set(projects.flatMap(p => p.tags))).sort();
-  
+
   const [activeTag, setActiveTag] = useState("All");
 
   // If a ?tag query param is passed, we can catch it inside a useEffect
@@ -18,11 +18,10 @@ export default function AllProjectsPage({ searchParams }) {
     if (tagFromUrl && allTags.includes(decodeURIComponent(tagFromUrl))) {
       setActiveTag(decodeURIComponent(tagFromUrl));
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const filteredProjects = activeTag === "All" 
-    ? projects 
+  const filteredProjects = activeTag === "All"
+    ? projects
     : projects.filter(p => p.tags.includes(activeTag));
 
   return (
@@ -47,14 +46,14 @@ export default function AllProjectsPage({ searchParams }) {
 
           {/* Filter Bar */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
-            <button 
+            <button
               onClick={() => setActiveTag("All")}
               className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeTag === "All" ? 'bg-primaryOrange text-white shadow-lg' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'}`}
             >
               All Projects
             </button>
             {allTags.map((tag, idx) => (
-              <button 
+              <button
                 key={idx}
                 onClick={() => setActiveTag(tag)}
                 className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeTag === tag ? 'bg-slate-900 text-white shadow-lg' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'}`}
@@ -64,11 +63,11 @@ export default function AllProjectsPage({ searchParams }) {
             ))}
           </div>
 
-           {filteredProjects.length === 0 && (
-             <div className="text-center py-20 text-slate-400">
-               No projects found bearing the selected tag.
-             </div>
-           )}
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-20 text-slate-400">
+              No projects found bearing the selected tag.
+            </div>
+          )}
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, idx) => (
