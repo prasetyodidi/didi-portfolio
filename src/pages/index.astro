@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import HeroSection from '../components/HeroSection.jsx';
-import AboutSection from '../components/AboutSection.jsx';
+import HeroSection from '../components/HeroSection.astro';
+import AboutSection from '../components/AboutSection.astro';
 import SkillsSection from '../components/SkillsSection.jsx';
 import ProjectsSection from '../components/ProjectsSection.jsx';
 import ExperienceSection from '../components/ExperienceSection.jsx';
@@ -27,9 +27,9 @@ import Navbar from '../components/Navbar.jsx';
 		</div>
 		<ExperienceSection client:load />
 		<EducationSection client:load />
-		
+
 		<ContactSection client:visible />
-		
+
 		<FooterSection />
 	</main>
 </Layout>
